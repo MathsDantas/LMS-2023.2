@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body{
+    background: rgb(8,117,159);
+    background: linear-gradient(30deg, rgba(8,117,159,1) 0%, rgba(13,160,179,1) 53%, rgba(0,212,255,1) 100%);
+}
+header {
+    color: rgb(229, 202, 172);
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: lighter;
+    font-size: large;
+}
