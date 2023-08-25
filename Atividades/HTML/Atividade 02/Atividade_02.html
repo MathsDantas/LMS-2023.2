@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8"> <!--Para corrigir bug nos acentos das palavras-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para certificar que funcione nornalmente em qualquer tela-->
+        <title>Campo Harmônico</title>
+        <link rel="icon" type="imagem/x-icon" href="violão.ico"> <!--Eu tava vendo o W3School e vi que tinha como mudar o icone que aparece na aba, achei legal e fiz também-->
+    </head>
+
+    <body>
+        <header>  <!--Cabeçalho do site-->
+            <h1>Campo Harmônico</h1>
+        </header>
+
+        <section> <!--Corpo do site-->
+
+            <h3>Onde aprender?</h3> <!--Sub título (coloquei isso para ter uma coesão maior no conteúdo da página)-->
+
+            <article>
+                <ul> <!--Lista não ordenada. Prefiro os "pontinhos" aos números-->
+
+                    <li>
+                        <a href="https://www.youtube.com/@HARMONIAFACIL" target="_blank"> <!--Para clicar e abrir o site em outra aba-->
+                            Canal do Youtube de Harmônico Facil <br />
+                        </a> <br />
+                    </li>
+
+                    <li>
+                        <a href="https://musicclan.com.br/blog/campo-harmonico/" target="_blank" > <!--Para clicar e abrir o site em outra aba-->
+                            Site da Music Clan <br />
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <p> Curso na Udemy: <br /> 
+                            <a href="https://www.udemy.com/course/campo-harmonico-descomplicado/" target="_blank"> <!--Para clicar na imagem e abrir o site em outra aba-->
+                                <img 
+                                src="Campo-Harmonico.webp" width="40%"
+                                alt="Foto de um violão" />
+                            </a>
+                        </p>    
+                    </li>   
+                </ul>
+                <br>
+            </article>
+            
+            <article>
+
+                <h3>Comparação das opções apresentadas</h3> <!--Sub título (igual ao caso anterior)-->
+                
+
+                <!--Tive que aprender um pouco de CSS antes da hora pra poder botar as bordas na tabela-->
+                <style> 
+                    table, th, td {
+                        border: 1px solid black;
+                        border-collapse: collapse ;
+                    }
+                </style> 
+
+                <table>
+                    <tr>
+                        <th></th> <!--Não consegui deixar essa célula sem as bordas de uma maneiro bonita, ai desisti :(-->
+                        <th>Qualidade</th>
+                        <th>Custo</th>
+                        <th>Facilidade de Uso</th>
+                    </tr>
+
+                    <tr>
+                        <td>Harmonia Fácil</td>
+                        <td>Alta</td>
+                        <td>Gratuito</td>
+                        <td>Fácil</td>
+                    </tr>
+
+                    <tr>
+                        <td>Music Clan</td>
+                        <td>Média</td>
+                        <td>Gratuito</td>
+                        <td>Médio</td>
+                    </tr>
+
+                    <tr>
+                        <td>Curso na <strong>Udemy</strong></td> <!--"Udemy" em negrito-->
+                        <td>Médio</td>
+                        <td>Pago</td>
+                        <td>Fácil</td>
+                    </tr>
+                </table>
+            </article>    
+
+        </section>
+
+        <section> <!--Seção destinada ao Cadastro (Formulário)-->
+            <br />
+            <h2>Formulário de Cadastro:</h2>
+            <p>Cadastre-se para obter conteúdo exclusivo sorbe Campos Harmônicos:</p> <br />
+
+                <form action="https://www.w3schools.com/action_page.php" method="get"> <!--Método GET e Action para o link do W3Schools-->
+                    <section>
+                        <label for="name">Nome completo (até 15 caracteres):</label> <br />
+                        <input type="text" id="nome" name="nome" maxlength="15" size="26"><br /> <!--Size de 26 para ficar no mesmo tamanho do texto-->
+                        
+                        
+                        <label for="email"> Seu E-mail:</label><br />
+                        <input type="email" id="email" name="email" size="26">
+                        <br />
+                    </section>
+
+                    <section>
+                        <br />
+                        <label for="nivel">Qual seu nivel de conhecimento em Campos Harmônicos?</label> <br />
+
+                        <input type="radio" id="nivel_iniciante" name="nivel_iniciante"> <!--Input do tipo radio-->
+                        <label for="nivel_iniciante"> Iniciante </label> <br />
+
+                        <input type="radio" id="nivel_intermediario" name="nivel_intermediario"> 
+                        <label for="nivel_intermediario"> Intermediário </label> <br />
+
+                        <input type="radio" id="nivel_avancado" name="nivel_avancado">
+                        <label for="nivel_avancado"> Avançado</label> <br /> <br />
+                    </section>
+                    
+                    <section>
+                        <label for="paraque">Para qual motivo você gostaria de aprender mais sobre Campos Harmônicos?</label> <br />
+
+                        <input type="checkbox" id="pessoal" name="pessoal" value="pessoal"> <!--Input do tipo checkbox-->
+                        <label for="pessoal">Pessoal</label>
+
+                        <input type="checkbox" id="profissional" name="profissional" value="profissional">
+                        <label for="profissional">Profissional</label> <br />
+                    </section>    
+
+                    <section>
+                        <br />
+                        <label for="quantidade">Escolha um número entre 25000 e 30000:</label> <!--escolher entre os apenas número-->
+                        <input type="number" id="quantidae" name="quantidade" min="25000" max="30000">
+                    </section>
+
+                    <section>
+                        <br />
+                        <textarea name="confirma" rows="1" cols="93" readonly> Ao clicar em "ENVIAR" você concorda em ceder essas informações para nossa central de ensino.                            
+                        </textarea> <!--Eu tive que deixar o texto na mesma linha pq quando eu colocava na linha de baixo surgir um espaço gigante em branco antes dos texto-->
+                    </section>
+
+                    <section>
+                        <br />
+                        <input type="submit" value="ENVIAR"> <!--Botão pra enviar o formulário-->
+                    </section>
+
+
+            </form>
+
+
+        </section>
+        
+    </body>
+</html>
